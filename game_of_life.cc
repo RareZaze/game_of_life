@@ -7,3 +7,34 @@
  * 
  * 
  */
+
+#include "game_of_life.h"
+#include <iostream>
+#include <fstream>
+
+
+using namespace std;
+
+GameOfLife::GameOfLife(){
+
+}
+
+GameOfLife::GameOfLife(int size){
+
+}
+
+void GameOfLife::load_grid(std::string filename){
+
+}
+
+void GameOfLife::save_grid(std::string filename){
+
+}
+
+void GameOfLife::print_grid(){
+
+}
+
+void GameOfLife::update_grid(){
+
+}

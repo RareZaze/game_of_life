@@ -7,10 +7,8 @@
  * 
  * 
  */
-#include <iostream>
 #include <vector>
 #include <string>
-#include <fstream>
 
 #ifndef GAME_OF_LIFE_H
 #define GAME_OF_LIFE_H
@@ -20,14 +18,13 @@ class GameOfLife {
         GameOfLife();
         GameOfLife(int size);
 
-        void load_grid(std::string filename);
-        void save_grid(std::string filename);
-
         void print_grid();
 
         void update_grid();
     private:
         std::vector<std::vector<bool>> grid;
+        void load_grid(std::string filename);
+        void save_grid(std::string filename);
 };
 
 #endif // GAME_OF_LIFE_H
