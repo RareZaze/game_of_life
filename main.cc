@@ -18,8 +18,31 @@
 
 #include "game_of_life.h"
 
+using namespace std;
+
 
 int main(int argc, char* argv[]) {
+    string filename;
+    cout << "Welcome to the Game of Life!" << endl;
+    cout << "Please enter the filename of the grid you would like to load: ";
+    cin >> filename;
+
+    string input = "";
+
+    GameOfLife game;
+    game.load_grid(filename);
+
+    while(true){
+        game.print_grid();
+        //cout << "Press 'q' to quit, or any other key to continue: ";
+        system("sleep 0.1");
+        system("clear");
+        game.update_grid();
+        game.save_grid(filename);
+    }
+
+    
+
 
     return 0;
 }

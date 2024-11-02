@@ -15,10 +15,13 @@
 using namespace std;
 
 int main(){
-    ofstream output("test");
+    ofstream output("test.dat");
 
-    for(int i = 0; i < 256; i++){
-        output << ((i%2) == 0);
+    for(int i = 0; i < 100; i++){
+        for (int j = 0; j < 100; j++){
+            output << '0';
+        }
+        output << '\n';
     }
 
     output.close();
